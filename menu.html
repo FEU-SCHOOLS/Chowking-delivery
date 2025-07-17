@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Menu - Chowking</title>
+  <title>Chowking - Menu</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <nav>
-    <ul>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="d8a7ad8c-544c-4f68-bf2b-8bf31829d115.jpg" alt="Chowking Logo">
+    </div>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="login.html">Logout</a></li>
-      <li><a href="#" id="viewCartBtn">View Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><button id="viewCartBtn">View Cart</button></li>
     </ul>
   </nav>
 
@@ -22,162 +25,64 @@
 
   <section class="menu-items-grid">
     <div class="menu-item" data-name="Chao Fan" data-price="99.00">
-      <img src="c4aa9b2b-94fd-4e04-a789-54a1a50a078a.jpg" alt="Chao Fan" title="Delicious Chowking Chao Fan">
+      <img src="c4aa9b2b-94fd-4e04-a789-54a1a50a078a.jpg" alt="Chao Fan">
       <h4>Chao Fan</h4>
       <p>₱99.00</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
+
     <div class="menu-item" data-name="Siomai Chao Fan with Egg" data-price="120.00">
-      <img src="7da38439-f927-427d-9eff-bf5aeb3f2331.jpg" alt="Siomai Chao Fan with Egg" title="Siomai Chao Fan - Smokey-Wok Sarap">
+      <img src="7da38439-f927-427d-9eff-bf5aeb3f2331.jpg" alt="Siomai Chao Fan with Egg">
       <h4>Siomai Chao Fan with Egg</h4>
       <p>₱120.00</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
+
     <div class="menu-item" data-name="Chicken Lauriat" data-price="170.00">
-      <img src="c170c372-0420-47fd-872a-fb1b7e9f06db.jpg" alt="Chicken Lauriat" title="Chowking Chicken Lauriat Meal">
+      <img src="c170c372-0420-47fd-872a-fb1b7e9f06db.jpg" alt="Chicken Lauriat">
       <h4>Chicken Lauriat</h4>
       <p>₱170.00</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
+
     <div class="menu-item" data-name="Chicken Ala Carte Plate" data-price="150.00">
-      <img src="chicken ala carte.jpg" alt="Chicken Ala Carte Plate" title="Chowking Chicken Ala Carte">
+      <img src="chicken ala carte.jpg" alt="Chicken Ala Carte Plate">
       <h4>Chicken Ala Carte Plate</h4>
       <p>₱150.00</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
+
     <div class="menu-item" data-name="Halo-Halo" data-price="75.00">
-      <img src="fcd0e55e-ef2d-4af4-be3c-7b69db9d2d07.jpg" alt="Halo-Halo" title="Chowking Halo-Halo">
+      <img src="fcd0e55e-ef2d-4af4-be3c-7b69db9d2d07.jpg" alt="Halo-Halo">
       <h4>Halo-Halo</h4>
       <p>₱75.00</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
+
     <div class="menu-item" data-name="Iced Tea" data-price="40.00">
-      <img src="21c056e8-dc9b-46c1-b7f6-97c8b6ecc8af.jpg" alt="Iced Tea" title="Refreshing Iced Tea">
+      <img src="21c056e8-dc9b-46c1-b7f6-97c8b6ecc8af.jpg" alt="Iced Tea">
       <h4>Iced Tea</h4>
       <p>₱40.00</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
+
     <div class="menu-item" data-name="Chicharap Prawn Chips" data-price="60.00">
-      <img src="44f3e617-8355-4e8b-aaea-ff7fb3dada88.jpg" alt="Chicharap Prawn Chips" title="Chicharap Prawn Chips">
+      <img src="44f3e617-8355-4e8b-aaea-ff7fb3dada88.jpg" alt="Chicharap Prawn Chips">
       <h4>Chicharap Prawn Chips</h4>
       <p>₱60.00</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
+
     <div class="menu-item" data-name="Assorted Chinese Food" data-price="250.00">
-      <img src="5c2f78f6-d1eb-4bd0-967c-7b1df56b034e.jpg" alt="Assorted Chinese Food" title="Assorted Chinese Food Platter">
+      <img src="5c2f78f6-d1eb-4bd0-967c-7b1df56b034e.jpg" alt="Assorted Chinese Food">
       <h4>Assorted Chinese Food</h4>
       <p>₱250.00</p>
       <button class="add-to-cart-btn">Add to Cart</button>
     </div>
-    <div class="menu-item" data-name="Wanton Noodles" data-price="130.00">
-      <img src="https://i.ibb.co/5x9NYStQ/wanton-noodles.jpg" alt="Wanton Noodles" title="Delicious Wanton Noodles">
-      <h4>Wanton Noodles</h4>
-      <p>₱130.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Fried Chicken" data-price="199.00">
-      <img src="fc665c4d-9746-4fe3-86c0-24b3bc6d10d3.jpg" alt="Fried Chicken" title="Crispy Fried Chicken">
-      <h4>Fried Chicken</h4>
-      <p>₱199.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
   </section>
 
-  <div class="order-section">
+  <section class="order-section">
     <button id="placeOrderBtn">Place Order</button>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Menu - Chowking</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="login.html">Logout</a></li>
-      <li><a href="#" id="viewCartBtn">View Cart</a></li>
-    </ul>
-  </nav>
-
-  <section class="hero">
-    <h1>Our Menu</h1>
-    <p>Select your favorite Chowking meals below.</p>
   </section>
-
-  <section class="menu-items-grid">
-    <div class="menu-item" data-name="Chao Fan" data-price="99.00">
-      <img src="c4aa9b2b-94fd-4e04-a789-54a1a50a078a.jpg" alt="Chao Fan" title="Delicious Chowking Chao Fan">
-      <h4>Chao Fan</h4>
-      <p>₱99.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Siomai Chao Fan with Egg" data-price="120.00">
-      <img src="7da38439-f927-427d-9eff-bf5aeb3f2331.jpg" alt="Siomai Chao Fan with Egg" title="Siomai Chao Fan - Smokey-Wok Sarap">
-      <h4>Siomai Chao Fan with Egg</h4>
-      <p>₱120.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Chicken Lauriat" data-price="170.00">
-      <img src="c170c372-0420-47fd-872a-fb1b7e9f06db.jpg" alt="Chicken Lauriat" title="Chowking Chicken Lauriat Meal">
-      <h4>Chicken Lauriat</h4>
-      <p>₱170.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Chicken Ala Carte Plate" data-price="150.00">
-      <img src="chicken ala carte.jpg" alt="Chicken Ala Carte Plate" title="Chowking Chicken Ala Carte">
-      <h4>Chicken Ala Carte Plate</h4>
-      <p>₱150.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Halo-Halo" data-price="75.00">
-      <img src="fcd0e55e-ef2d-4af4-be3c-7b69db9d2d07.jpg" alt="Halo-Halo" title="Chowking Halo-Halo">
-      <h4>Halo-Halo</h4>
-      <p>₱75.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Iced Tea" data-price="40.00">
-      <img src="21c056e8-dc9b-46c1-b7f6-97c8b6ecc8af.jpg" alt="Iced Tea" title="Refreshing Iced Tea">
-      <h4>Iced Tea</h4>
-      <p>₱40.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Chicharap Prawn Chips" data-price="60.00">
-      <img src="44f3e617-8355-4e8b-aaea-ff7fb3dada88.jpg" alt="Chicharap Prawn Chips" title="Chicharap Prawn Chips">
-      <h4>Chicharap Prawn Chips</h4>
-      <p>₱60.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Assorted Chinese Food" data-price="250.00">
-      <img src="5c2f78f6-d1eb-4bd0-967c-7b1df56b034e.jpg" alt="Assorted Chinese Food" title="Assorted Chinese Food Platter">
-      <h4>Assorted Chinese Food</h4>
-      <p>₱250.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Wanton Noodles" data-price="130.00">
-      <img src="https://i.ibb.co/5x9NYStQ/wanton-noodles.jpg" alt="Wanton Noodles" title="Delicious Wanton Noodles">
-      <h4>Wanton Noodles</h4>
-      <p>₱130.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-    <div class="menu-item" data-name="Fried Chicken" data-price="199.00">
-      <img src="fc665c4d-9746-4fe3-86c0-24b3bc6d10d3.jpg" alt="Fried Chicken" title="Crispy Fried Chicken">
-      <h4>Fried Chicken</h4>
-      <p>₱199.00</p>
-      <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
-  </section>
-
-  <div class="order-section">
-    <button id="placeOrderBtn">Place Order</button>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
