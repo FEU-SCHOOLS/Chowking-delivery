@@ -6,7 +6,7 @@ const orderBtn = document.getElementById('orderNowBtn');
 if (orderBtn) {
   orderBtn.addEventListener('click', function () {
     alert('Redirecting to login/menu...');
-    window.location.href = "login.html";
+    window.location.href = "login.html"; // Or "menu.html" if you want to skip login
   });
 }
 
