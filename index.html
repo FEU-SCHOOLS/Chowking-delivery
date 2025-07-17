@@ -2,8 +2,34 @@
 <html lang="en">
 <head>
   <title>Chowking - Home</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      background-color: #c8102e;
+      padding: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 100px;
+      text-align: center;
+      background-color: #ff9f00;
+      color: white;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 50px auto;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -16,7 +42,7 @@
   <section class="hero">
     <h1>Welcome to Chowking</h1>
     <p>Chinese sarap since 1985</p>
-    <button id="orderNowBtn">Order Now</button>
+    <button onclick="window.location.href='login.html'">Order Now</button>
   </section>
 </body>
 </html>
