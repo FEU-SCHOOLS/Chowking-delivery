@@ -125,7 +125,6 @@ body {
   background-color: #a00d25;
 }
 
-/* Menu Page Specific Styles */
 .menu-items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -211,7 +210,6 @@ body {
   background-color: #a00d25;
 }
 
-/* About Page Specific Styles */
 .about-section {
   max-width: 800px;
   margin: 50px auto;
