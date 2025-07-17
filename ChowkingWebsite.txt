@@ -1,0 +1,18 @@
+ChowkingWebsite/
+├── index.html
+├── about.html
+├── login.html
+├── menu.html
+├── style.css
+├── script.js
+└── images/  
+    ├── halo_halo.jpg
+    ├── iced_tea.jpg
+    ├── chao_fan_new.jpg
+    ├── chicken_lauriat.jpg
+    ├── siomai_chao_fan.jpg
+    ├── chicharap.jpg
+    ├── chicken_ala_carte.jpg
+    ├── chowking_logo.jpg
+    ├── chowking_ck_logo.jpg
+    └── assorted_chinese_food.jpg
