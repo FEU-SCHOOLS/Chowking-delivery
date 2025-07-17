@@ -1,49 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>About Chowking</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="d8a7ad8c-544c-4f68-bf2b-8bf31829d115.jpg" alt="Chowking Logo">
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-  </nav>
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0; /* Light cream background */
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
 
-  <section class="hero-about">
-    <img src="4085ce0f-a63c-4c3a-955a-e30949b719c2.jpg" alt="Chowking Restaurant">
-    <div class="hero-text">
-      <h1>About Us</h1>
-      <p>Your favorite Chinese fast-food chain in the Philippines.</p>
-    </div>
-  </section>
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c8102e; /* Chowking Red */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-  <section class="story">
-    <div class="container">
-      <h2>Our Story</h2>
-      <p>Founded in 1985, Chowking is known for combining Chinese cuisine with fast food. It is the first and largest Chinese fast-food chain in the Philippines. It started its operations with a single branch and has since grown to hundreds of stores nationwide and even branches overseas, including the United States, United Arab Emirates, and Qatar.</p>
-      <div class="story-image">
-        <img src="https://via.placeholder.com/800x400?text=Chowking+Store+Front" alt="Chowking Store Front">
-      </div>
-      <p>Chowking offers a diverse menu that blends traditional Chinese dishes with modern fast-food convenience. Popular items include its delicious Chao Fan (fried rice), Lauriat meals which are complete rice meals with various viands, dim sum, noodles, and refreshing Halo-Halo. The brand continually innovates its menu to cater to the evolving tastes of its customers while staying true to its Chinese heritage.</p>
-    </div>
-  </section>
+.navbar .logo img {
+  height: 40px; /* Adjust logo size */
+  vertical-align: middle;
+}
 
-  <section class="quote-section">
-    <blockquote>
-      "Bringing Chinese Sarap to every Filipino home, one meal at a time!"
-    </blockquote>
-  </section>
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Spacing between nav items */
+  margin: 0;
+  padding: 0;
+}
 
-  <footer class="about-footer">
-    <p>&copy; 2025 Chowking. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+.nav-links li a,
+.navbar button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.navbar button:hover {
+  background-color: #a00d23; /* Darker red on hover */
+}
+
+.navbar button {
+  background-color: #ff9f00; /* Chowking Orange for buttons */
+  border: none;
+  cursor: pointer;
+  margin-left: 20px; /* Space from last nav link */
+}
+
+/* Hero Section Styles (Home and Menu Pages) */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ff9f00; /* Chowking Orange */
+  color: white;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* Button Styles (for "Order Now" on Home) */
+.hero button {
+  padding: 12px 25px;
+  background-color: #c8102e; /* Chowking Red */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero button:hover {
+  background-color: #a00d23; /* Darker red on hover */
+  transform: translateY(-2px);
+}
+
+/* Section Styles (for About Page) */
+section {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0px auto 30px auto; /* Centered content, margin-bottom for separation */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #c8102e; /* Chowking Red */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+}
+
+section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+/* Login Container Styles */
+.login-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container h3 {
+  color: #c8102e;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+.login-container label {
+  text-align: left;
+  font-weight: bold;
+  color: #666;
+  margin-top: 10px; /* Space above label */
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  width: calc(100% - 30px); /* Adjust for padding */
+}
+
+.login-container button[type="submit"] {
+  padding: 12px 25px;
+  background-color: #c8102e; /* Chowking Red */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-top: 25px; /* Space above submit button */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #a00d23;
+  transform: translateY(-2px);
+}
+
+/* Menu Items Grid Styles */
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 30px; /* Space between menu items */
+  max-width: 1200px;
+  margin: 0px auto 50px auto; /* Centered with bottom margin */
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes button to bottom */
+}
+
+.menu-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: 180px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.menu-item h4 {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 1.1em;
+  color: #c8102e; /* Red price */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu-item .add-to-cart-btn {
+  background-color: #ff9f00; /* Orange for add to cart */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 80%; /* Button width */
+  align-self: center; /* Center the button */
+}
+
+.menu-item .add-to-cart-btn:hover {
+  background-color: #e08b00; /* Darker orange on hover */
+  transform: translateY(-2px);
+}
+
+/* Order Section Button (Place Order) */
+.order-section {
+    text-align: center;
+    margin: 40px auto 80px auto; /* Centered with ample top/bottom margin */
+    max-width: 960px;
+}
+
+.order-section button {
+    padding: 15px 40px;
+    background-color: #c8102e; /* Chowking Red */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.order-section button:hover {
+    background-color: #a00d23;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Footer (optional, but good practice for consistency) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
