@@ -6,7 +6,6 @@ body {
   color: #333;
 }
 
-/* Existing Nav Styles - for index, login, menu */
 nav ul {
   list-style: none;
   display: flex;
@@ -14,7 +13,7 @@ nav ul {
   background-color: #c8102e;
   padding: 15px 20px;
   margin: 0;
-  justify-content: flex-end; /* Aligns items to the right for these navs */
+  justify-content: flex-end;
 }
 
 nav ul li a {
@@ -28,7 +27,6 @@ nav ul li a:hover {
   color: #ffcc00;
 }
 
-/* Hero Section Styles - for index, menu */
 .hero {
   padding: 100px 20px;
   text-align: center;
@@ -69,7 +67,6 @@ nav ul li a:hover {
   transform: translateY(-2px);
 }
 
-/* General Section Styles (used in about.html mostly) */
 section {
   padding: 40px 20px;
   margin: 20px auto;
@@ -91,7 +88,6 @@ section p {
   text-align: justify;
 }
 
-/* Login Page Styles */
 .login-container {
   max-width: 450px;
   margin: 60px auto;
@@ -148,7 +144,6 @@ section p {
   transform: translateY(-2px);
 }
 
-/* Menu Page Grid Styles */
 .menu-items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -256,163 +251,17 @@ nav ul li #viewCartBtn:hover {
     color: #ffcc00;
 }
 
-/* New styles for about.html */
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #c8102e; /* Chowking Red */
-  padding: 15px 30px;
-  color: white;
-}
-
-.navbar .logo img {
-  height: 60px; /* Adjust as needed */
-  width: auto;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar .nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  transition: color 0.3s ease;
-}
-
-.navbar .nav-links li a:hover {
-  color: #ffcc00; /* Chowking Orange for hover */
-}
-
-.hero-about {
-  position: relative;
-  width: 100%;
-  height: 400px; /* Adjust height as needed */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.hero-about img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.6); /* Darken image for text readability */
-  z-index: 1;
-}
-
-.hero-about .hero-text {
-  position: relative;
-  z-index: 2;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for text */
-  border-radius: 10px;
-}
-
-.hero-about h1 {
-  font-size: 3.5em;
-  margin-bottom: 10px;
-}
-
-.hero-about p {
-  font-size: 1.4em;
-}
-
-.story {
-  padding: 50px 20px;
-  background-color: #fff8f0;
-}
-
-.story .container {
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.story h2 {
-  color: #c8102e;
-  font-size: 2em;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.story p {
-  font-size: 1.1em;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-.story-image {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.story-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.quote-section {
-  background-color: #ff9f00; /* Chowking Orange */
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-  margin-top: 40px;
-}
-
-.quote-section blockquote {
-  font-size: 2em;
-  font-style: italic;
-  margin: 0 auto;
-  max-width: 800px;
-  line-height: 1.4;
-}
-
-.about-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  margin-top: 40px;
-}
-
-/* Responsive adjustments for all pages */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 10px;
   }
 
-  .hero {
-    padding: 60px 20px;
-  }
   .hero h1 {
     font-size: 2.5em;
   }
+
   .hero p {
     font-size: 1em;
   }
@@ -431,46 +280,6 @@ nav ul li #viewCartBtn:hover {
   .menu-item img {
     height: 150px;
   }
-
-  /* About page specific responsive adjustments */
-  .navbar {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .navbar .nav-links {
-    margin-top: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero-about {
-    height: 300px;
-  }
-
-  .hero-about h1 {
-    font-size: 2.5em;
-  }
-
-  .hero-about p {
-    font-size: 1.1em;
-  }
-
-  .story .container {
-    padding: 20px;
-  }
-
-  .story h2 {
-    font-size: 1.8em;
-  }
-
-  .story p {
-    font-size: 1em;
-  }
-
-  .quote-section blockquote {
-    font-size: 1.5em;
-  }
 }
 
 @media (max-width: 480px) {
@@ -484,30 +293,5 @@ nav ul li #viewCartBtn:hover {
 
   .menu-items-grid {
     grid-template-columns: 1fr;
-  }
-
-  /* About page specific responsive adjustments */
-  .navbar .logo img {
-    height: 50px;
-  }
-
-  .navbar .nav-links li a {
-    font-size: 1em;
-  }
-
-  .hero-about {
-    height: 250px;
-  }
-
-  .hero-about h1 {
-    font-size: 2em;
-  }
-
-  .hero-about p {
-    font-size: 1em;
-  }
-
-  .story .container {
-    margin: 0 10px;
   }
 }
